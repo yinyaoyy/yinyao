@@ -6,6 +6,7 @@ public class StringPractice {
 
 		String[] a = {"s","2"};
 		System.out.println(a);
+		System.out.println("hshshshshshs");
 	}
 
 }
