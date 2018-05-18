@@ -1,14 +1,15 @@
 package com.haoxingart.base.util;
 
 
-import org.apache.commons.lang3.CharUtils;
-import org.apache.commons.lang3.StringUtils;
 
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import org.apache.commons.lang.CharUtils;
+import org.apache.commons.lang.StringUtils;
 
 /**
  * Created by dengqc on 2017/3/13.
@@ -201,27 +202,6 @@ public class StringUtil  extends StringUtils {
         return true;
     }
 
-    /**
-     * 将字符串中的某些字符转换成相对应的字符
-     *
-     * @param text 待处理字符串。
-     * @param character 待替换的子串组。如：{"find":"replace"}, {"find1":"replace1"}
-     * @return 处理后的字符串
-     */
-    public static String replace(String text, String[][] character) {
-        if (isEmpty(text) || character.length == 0) {
-            return text;
-        }
-        String[] searchList = new String[character.length];
-        String[] replacementList = new String[character.length];
-        for (int i = 0; i < character.length; i++) {
-            if (character[i].length == 2) {
-                searchList[i] = character[i][0];
-                replacementList[i] = character[i][1];
-            }
-        }
-        return replaceEach(text, searchList, replacementList);
-    }
 
     /**
      * 将字符串中行去掉

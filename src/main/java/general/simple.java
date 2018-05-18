@@ -20,6 +20,7 @@ public class simple {
 //			}
 //			
 //		}
+		
 		for(int i = 0;i<100;i++) {
 			new ThreadTest().start();
 			System.out.println("i="+i);

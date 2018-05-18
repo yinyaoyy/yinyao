@@ -32,6 +32,7 @@
                     location.href = "log_in.do";
                 }
             }
+         
         </script> 
     </head>
     <body class="error_page" onload="startTimes();">

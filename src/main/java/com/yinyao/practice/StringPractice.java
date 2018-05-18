@@ -36,7 +36,23 @@ public class StringPractice extends wode{
 			System.out.println(str);
 		}
 		
-        
+       List<String> list = new ArrayList<String>();
+       list.add("1");
+       list.add("2");
+       list.add("3");
+       list.add("4");
+       boolean b = list.contains("6");
+       System.out.println(b);
+       
+       String card = "370983199206272330";
+       String str = card.substring(6,14);
+       StringBuffer buf = new StringBuffer();
+       buf.append(str.substring(0, 4));
+       buf.append("-");
+       buf.append(str.substring(4, 6));
+       buf.append("-");
+       buf.append(str.substring(6));     
+       System.out.println(buf.toString());
 	}
     
 

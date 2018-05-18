@@ -75,9 +75,11 @@ public class controller {
        if(!file.isEmpty()) {
            //上传文件路径
            String path = request.getServletPath();
+           System.out.println(path);
            //上传文件名
            String filename = file.getOriginalFilename();
            File filepath = new File(path,filename);
+           System.out.println(filepath);
            //判断路径是否存在，如果不存在就创建一个
            if (!filepath.getParentFile().exists()) { 
                filepath.getParentFile().mkdirs();
@@ -90,4 +92,5 @@ public class controller {
        }
 
     }	
+	
 }
