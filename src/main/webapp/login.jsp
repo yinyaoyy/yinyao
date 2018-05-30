@@ -5,12 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>Insert title here</title>
-<script type="text/javascript">
-   .table td{
-	   text-aline:center;
-   }
 
-</script>
 </head>
 <body>
 <h2>文件上传</h2>

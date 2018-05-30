@@ -27,6 +27,7 @@ public class simple {
 			Thread.sleep(3000);
 			System.out.println("i="+i);
 		}
+	
 	}
 
 	public static  List get() {
@@ -52,5 +53,6 @@ class ThreadTest extends Thread{
 		for(int i = 0;i<100;i++) {
 			ThreadTest.i++;
 		}
+		System.out.println(i);
 	}
 }

@@ -1,5 +1,6 @@
 package com.yinyao.practice;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.LinkedList;
@@ -53,6 +54,16 @@ public class StringPractice extends wode{
        buf.append("-");
        buf.append(str.substring(6));     
        System.out.println(buf.toString());
+       String str1 = "12345678910";
+       char[] ch = str1.toCharArray();
+       System.out.println(ch.length);
+       File file = new File("e:/install");
+       File[] files = file.listFiles();
+      for (int i = 0; i < files.length; i++) {
+		if(files[i].isDirectory()) {
+			System.out.println(files[i]);
+		}
+	}
 	}
     
 

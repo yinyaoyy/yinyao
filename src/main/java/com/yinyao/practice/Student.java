@@ -2,6 +2,7 @@ package com.yinyao.practice;
 
 public class Student {
 
+	public Student() {}
 	private String  name;
 	
 	private String  age;
